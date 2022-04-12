@@ -11,6 +11,7 @@ public class Main {
 				m.Passward();
 				m.PasswardWith1Uppercase();
 				m.PasswardWith1Numeric();
+				m.PasswardWith1_Special_Character();
 			}
 		}
 	

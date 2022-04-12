@@ -10,6 +10,7 @@ public class Main {
 				m.Mobile_Number();
 				m.Passward();
 				m.PasswardWith1Uppercase();
+				m.PasswardWith1Numeric();
 			}
 		}
 	

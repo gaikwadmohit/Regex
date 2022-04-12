@@ -9,7 +9,7 @@ public class Main {
 				m.Email_Id();
 				m.Mobile_Number();
 				m.Passward();
-				
+				m.PasswardWith1Uppercase();
 			}
 		}
 	

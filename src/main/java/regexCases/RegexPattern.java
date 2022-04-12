@@ -22,6 +22,23 @@ public class RegexPattern {
 			System.out.println();
 
 		}
+		public void Last_Name() {
 
+			// scanning
+			String line = "Gaikwad";
+			String pattern = "^[A-Z][a-z]*";
+
+			// Create pattern object
+			Pattern pat = Pattern.compile(pattern);
+
+			// matching object create
+			Matcher mat = pat.matcher(line);
+
+			// Check Matching or not
+			boolean result1 = mat.matches();
+			System.out.println("Last Name Matching result is " + result1);
+			System.out.println();
+
+		}
 }
 

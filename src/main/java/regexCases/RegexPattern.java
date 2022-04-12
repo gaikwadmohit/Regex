@@ -76,6 +76,25 @@ public class RegexPattern {
 			System.out.println();
 
 		}
+		public void Passward() {
+
+			// scanning
+			String line = "abcdefoo123";
+			String pattern = "^[a-z][A-Z][0-9]*$";
+
+			// Create pattern object
+			Pattern pat = Pattern.compile(pattern);
+
+			// matching object create
+			Matcher mat = pat.matcher(line);
+
+			// Check Matching or not
+			boolean result4 = mat.matches();
+			System.out.println("passward Matching result is " + result4);
+			System.out.println();
+
+		}
+
 }
 
 

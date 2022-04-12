@@ -8,6 +8,8 @@ public class Main {
 				m.Last_Name();
 				m.Email_Id();
 				m.Mobile_Number();
+				m.Passward();
+				
 			}
 		}
 	

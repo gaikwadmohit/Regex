@@ -1,18 +1,23 @@
 package regexCases;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Main {
 
-			public static void main(String[] args) {
-				RegexPattern m = new RegexPattern();
-				m.first_Name();
-				m.Last_Name();
-				m.Email_Id();
-				m.Mobile_Number();
-				m.Passward();
-				m.PasswardWith1Uppercase();
-				m.PasswardWith1Numeric();
-				m.PasswardWith1_Special_Character();
-			}
-		}
-	
 
+		
+		private static final String EMAIL_REGEX = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+		private static Pattern pattern;
+		private Matcher matcher;
+
+		public Main() {
+			pattern = Pattern.compile(EMAIL_REGEX, Pattern.CASE_INSENSITIVE);
+		}
+
+		
+		public boolean checkValidation(String email) {
+			matcher = pattern.matcher(email);
+			return matcher.matches();
+		}
+	}
